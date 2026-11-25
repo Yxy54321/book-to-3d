@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+node_modules/
+/book/LOCAL_BOOK.json
+/book/chapter-map.local.json
+/book/source/*
+!/book/source/README.md
+/chapters/*
+!/chapters/.keep

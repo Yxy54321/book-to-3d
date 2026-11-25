@@ -1,0 +1,23 @@
+{
+  "chapter": "{N}",
+  "objectives": [
+    {
+      "id": "LO0",
+      "statement": "体验后应能用自己的话说出：这些事发生在什么年代、哪些地方，大致先后",
+      "question": "这些事发生在哪些年代、哪些地方？先后顺序是怎样的？",
+      "reference_answer": "（来自正文，附页码）",
+      "pages": [0],
+      "discoverable_by_doing": false,
+      "scenes": []
+    },
+    {
+      "id": "LO1",
+      "statement": "（例：感知机是靠“猜—被告知对错—调整”学会的）",
+      "question": "（锚定在体验上：例：那台机器是怎样从猜错变成猜对的？你在其中做了什么？）",
+      "reference_answer": "（来自正文，附页码）",
+      "pages": [0],
+      "discoverable_by_doing": true,
+      "scenes": ["s3"]
+    }
+  ]
+}

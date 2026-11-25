@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "backlog",
+  "type": "object",
+  "required": [
+    "next_id",
+    "issues"
+  ],
+  "properties": {
+    "next_id": {
+      "type": "integer"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "issue.schema.json"
+      }
+    }
+  }
+}

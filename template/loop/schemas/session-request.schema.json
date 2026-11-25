@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "session-request",
+  "description": "tools/session.mjs 的输入合同；适配层负责实现",
+  "type": "object",
+  "required": [
+    "sid",
+    "role",
+    "prompt_file",
+    "inbox_files",
+    "output_file",
+    "output_schema"
+  ],
+  "properties": {
+    "sid": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "description": "lens:art / comparer / playtester / annotator / designer / imagegen"
+    },
+    "prompt_file": {
+      "type": "string"
+    },
+    "inbox_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "复制进 inbox/ 的白名单文件"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "需要以图片形式附给模型的文件（inbox 内相对路径）"
+    },
+    "can_execute": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "允许执行的命令；只有 playtester 可以有 ./play"
+    },
+    "output_file": {
+      "type": "string"
+    },
+    "output_schema": {
+      "type": "string"
+    },
+    "fresh": {
+      "const": true
+    },
+    "effort": {
+      "enum": [
+        "max",
+        "high"
+      ]
+    },
+    "heterogeneous": {
+      "type": "boolean",
+      "description": "是否用另一种 CLI 执行（第8.5节）"
+    }
+  }
+}

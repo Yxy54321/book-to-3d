@@ -1,0 +1,1581 @@
+{
+  "version": "1.0",
+  "authority": "STYLE_CONTROL.md（文字为准；冲突记入 OPEN_QUESTIONS.md）",
+  "style_options": [
+    "archival",
+    "paper",
+    "editorial",
+    "miniature"
+  ],
+  "selection": {
+    "file": "SELECTION.json",
+    "chosen_by": "user",
+    "note": "全书只实现选定的一种；循环只读"
+  },
+  "era_bands": {
+    "A": {
+      "years": [
+        1950,
+        1969
+      ],
+      "neutrals": [
+        "#E6DFCF",
+        "#C9CECC",
+        "#B9C2B4",
+        "#C4C8C3"
+      ],
+      "materials": [
+        "#44535E",
+        "#BCC4C8",
+        "#9E6C3B",
+        "#CFA04B",
+        "#23201D"
+      ],
+      "accents": [
+        "#C23D2D",
+        "#F5A431",
+        "#2F5D46",
+        "#2F4E73"
+      ]
+    },
+    "B": {
+      "years": [
+        1970,
+        1989
+      ],
+      "neutrals": [
+        "#D8CDB8",
+        "#CFC6B3",
+        "#E2D9C6",
+        "#6B4F3A"
+      ],
+      "materials": [
+        "#D9CFB8",
+        "#6E4A2C",
+        "#B5652E",
+        "#6F6B3A",
+        "#8A8F94"
+      ],
+      "accents": [
+        "#B03A2E",
+        "#FFB347",
+        "#3E6E5A"
+      ]
+    },
+    "C": {
+      "years": [
+        1990,
+        2009
+      ],
+      "neutrals": [
+        "#BFC3C7",
+        "#D3D5D6",
+        "#8D939A",
+        "#5D6570"
+      ],
+      "materials": [
+        "#C7CBD0",
+        "#2B2D30",
+        "#C9A77C",
+        "#7E858C"
+      ],
+      "accents": [
+        "#2F5F8F",
+        "#C0392B",
+        "#D9A441"
+      ]
+    },
+    "D": {
+      "years": [
+        2010,
+        2020
+      ],
+      "neutrals": [
+        "#ECEBE6",
+        "#DAD8D2",
+        "#A9A8A3",
+        "#3A3C40"
+      ],
+      "materials": [
+        "#CDB08A",
+        "#222326",
+        "#B8BCC0",
+        "#E4E6E8"
+      ],
+      "accents": [
+        "#D0473A",
+        "#3F74B5",
+        "#E2B33C",
+        "#4C9A5B"
+      ]
+    }
+  },
+  "color_rules": {
+    "no_semantic_color": true,
+    "accent_area_max_fraction": 0.1,
+    "forbid_pure_white_surface": true,
+    "forbid_pure_black_shadow": true,
+    "adjacent_scene_neutral_min_delta_e": 8,
+    "note": "点缀色来自真实物件；园区原色只作环境点缀，不组合成公司标志"
+  },
+  "material_roles": {
+    "wall.plaster": {
+      "eras": {
+        "A": "#E6DFCF",
+        "B": "#E2D9C6",
+        "C": "#D3D5D6",
+        "D": "#ECEBE6"
+      },
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "wall.brick": {
+      "eras": {
+        "A": "#C4C8C3",
+        "B": "#B9826A",
+        "C": "#A9A8A3",
+        "D": "#9C6B57"
+      },
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "wall.panel_wood": {
+      "eras": {
+        "A": "#8F5D34",
+        "B": "#6E4A2C",
+        "C": "#9C7A55",
+        "D": "#CDB08A"
+      },
+      "rough": [
+        0.5,
+        0.7
+      ],
+      "metal": [
+        0,
+        0.03
+      ]
+    },
+    "wall.glass": {
+      "eras": {
+        "C": "#B9C7CF",
+        "D": "#C9D6DC"
+      },
+      "rough": [
+        0.05,
+        0.15
+      ],
+      "metal": [
+        0,
+        0
+      ],
+      "transmission": 0.6
+    },
+    "floor.linoleum": {
+      "eras": {
+        "A": "#9AA39A",
+        "B": "#A8916E",
+        "C": "#9A9EA2"
+      },
+      "rough": [
+        0.5,
+        0.7
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "floor.wood": {
+      "all": "#7A5230",
+      "rough": [
+        0.45,
+        0.65
+      ],
+      "metal": [
+        0,
+        0.02
+      ]
+    },
+    "floor.carpet": {
+      "eras": {
+        "A": "#6E3B33",
+        "B": "#6B4F3A",
+        "C": "#5D6570",
+        "D": "#7B7C80"
+      },
+      "rough": [
+        0.95,
+        1.0
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "floor.concrete": {
+      "all": "#A9A8A3",
+      "rough": [
+        0.8,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "floor.stone": {
+      "all": "#8E8C86",
+      "rough": [
+        0.7,
+        0.9
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "ceiling.tile": {
+      "all": "#E3E0D6",
+      "rough": [
+        0.9,
+        1.0
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "wood.varnished": {
+      "variants": {
+        "light": "#B98A57",
+        "medium": "#9E6C3B",
+        "dark": "#6E4A2C"
+      },
+      "rough": [
+        0.42,
+        0.56
+      ],
+      "metal": [
+        0.02,
+        0.04
+      ],
+      "rule": "相邻场景不得使用同一变体作为前景工作面"
+    },
+    "wood.raw": {
+      "all": "#A88B67",
+      "rough": [
+        0.72,
+        0.84
+      ],
+      "metal": [
+        0,
+        0.02
+      ]
+    },
+    "metal.painted_steel": {
+      "eras": {
+        "A": "#44535E",
+        "B": "#8A8F94",
+        "C": "#7E858C",
+        "D": "#3A3C40"
+      },
+      "rough": [
+        0.48,
+        0.6
+      ],
+      "metal": [
+        0.32,
+        0.45
+      ],
+      "detail": "锤纹/皱纹细颗粒、边缘磨耗"
+    },
+    "metal.brushed": {
+      "all": "#BCC4C8",
+      "rough": [
+        0.3,
+        0.42
+      ],
+      "metal": [
+        0.5,
+        0.72
+      ],
+      "detail": "横向拉丝"
+    },
+    "metal.brass": {
+      "all": "#CFA04B",
+      "rough": [
+        0.3,
+        0.4
+      ],
+      "metal": [
+        0.75,
+        0.85
+      ]
+    },
+    "metal.chrome": {
+      "all": "#D6D8D9",
+      "rough": [
+        0.12,
+        0.25
+      ],
+      "metal": [
+        0.85,
+        0.95
+      ]
+    },
+    "plastic.bakelite": {
+      "all": "#23201D",
+      "rough": [
+        0.32,
+        0.44
+      ],
+      "metal": [
+        0.06,
+        0.06
+      ]
+    },
+    "plastic.beige": {
+      "eras": {
+        "B": "#D9CFB8",
+        "C": "#D6CDB9"
+      },
+      "rough": [
+        0.45,
+        0.6
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "plastic.silver": {
+      "eras": {
+        "A": "#BCC4C8",
+        "C": "#C7CBD0",
+        "D": "#B8BCC0"
+      },
+      "rough": [
+        0.3,
+        0.45
+      ],
+      "metal": [
+        0.3,
+        0.6
+      ]
+    },
+    "plastic.matte_black": {
+      "all": "#222326",
+      "rough": [
+        0.55,
+        0.75
+      ],
+      "metal": [
+        0,
+        0.05
+      ]
+    },
+    "plastic.colored": {
+      "note": "颜色取自真实物件，落在对应年代带 accents 附近",
+      "rough": [
+        0.4,
+        0.6
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "glass.clear": {
+      "all": "#DCE6EA",
+      "rough": [
+        0.02,
+        0.1
+      ],
+      "metal": [
+        0,
+        0
+      ],
+      "transmission": 0.85
+    },
+    "glass.frosted": {
+      "all": "#EEF0EE",
+      "rough": [
+        0.4,
+        0.6
+      ],
+      "metal": [
+        0,
+        0
+      ],
+      "transmission": 0.5
+    },
+    "paper.card": {
+      "eras": {
+        "A": "#F2EBDA",
+        "B": "#F1EBDD",
+        "C": "#F3F1EA",
+        "D": "#F5F3EE"
+      },
+      "rough": [
+        0.86,
+        0.94
+      ],
+      "metal": [
+        0,
+        0
+      ],
+      "thickness_mm": [
+        2,
+        4
+      ]
+    },
+    "paper.newsprint": {
+      "all": "#EDE4CF",
+      "rough": [
+        0.9,
+        0.96
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "paper.notebook": {
+      "all": "#F3EEDF",
+      "rough": [
+        0.86,
+        0.94
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "paper.photo": {
+      "all": "#F0EEE8",
+      "rough": [
+        0.25,
+        0.4
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "fabric.suit": {
+      "eras": {
+        "A": "#3B4552",
+        "B": "#5A4A3C",
+        "C": "#3A3D44",
+        "D": "#2E3138"
+      },
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "fabric.shirt": {
+      "all": "#ECE8DE",
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "fabric.upholstery": {
+      "eras": {
+        "A": "#7A2E2A",
+        "B": "#9A5B2E",
+        "C": "#4A5566",
+        "D": "#6E7378"
+      },
+      "rough": [
+        0.9,
+        1.0
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "fabric.cable_braid": {
+      "palette": [
+        "#9C3D2E",
+        "#C1913A",
+        "#2F3F73",
+        "#2F5D46",
+        "#2A2622"
+      ],
+      "rough": [
+        0.8,
+        0.9
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "fabric.casual": {
+      "eras": {
+        "C": "#6C7A89",
+        "D": "#8A8F95"
+      },
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ],
+      "note": "D 年代带可出现灰色 T 恤等正文描述的衣着"
+    },
+    "ceramic.white": {
+      "all": "#EFEAE0",
+      "rough": [
+        0.15,
+        0.3
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "rubber.black": {
+      "all": "#2A2826",
+      "rough": [
+        0.8,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "chalkboard": {
+      "all": "#2E4537",
+      "rough": [
+        0.85,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "whiteboard": {
+      "all": "#EEF0EF",
+      "rough": [
+        0.15,
+        0.3
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "go.board": {
+      "all": "#D9B36A",
+      "rough": [
+        0.4,
+        0.55
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "go.stone_black": {
+      "all": "#1E1E1F",
+      "rough": [
+        0.2,
+        0.35
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "go.stone_white": {
+      "all": "#EDEBE4",
+      "rough": [
+        0.2,
+        0.35
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "screen.crt": {
+      "eras": {
+        "B": "#7CFF9E",
+        "C": "#DDE8F5"
+      },
+      "emissive_level": 2,
+      "note": "B 年代带可用绿色或琥珀色荧光"
+    },
+    "screen.lcd": {
+      "eras": {
+        "C": "#DDE8F5",
+        "D": "#E6EEF8"
+      },
+      "emissive_level": 2
+    },
+    "screen.projection": {
+      "all": "#ECE7DB",
+      "emissive_level": 2
+    },
+    "light.bulb_tungsten": {
+      "all": "#FFD79A",
+      "emissive_level": 1
+    },
+    "light.tube_fluorescent": {
+      "all": "#F1F5F0",
+      "emissive_level": 1
+    },
+    "light.panel_led": {
+      "all": "#F4F7FA",
+      "emissive_level": 1
+    },
+    "light.indicator": {
+      "palette": [
+        "#F5A431",
+        "#C23D2D",
+        "#4E8C57"
+      ],
+      "emissive_level": 2
+    },
+    "figure.skin": {
+      "note": "按人物真实族裔合理选择，不夸张；范围示例",
+      "range": [
+        "#F1D3BC",
+        "#D9A982",
+        "#B07A55",
+        "#7B4E34",
+        "#4E3426"
+      ],
+      "rough": [
+        0.6,
+        0.8
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "figure.hair": {
+      "range": [
+        "#1E1A17",
+        "#3B2A20",
+        "#6B4A30",
+        "#8E8A84",
+        "#C9C4BA"
+      ],
+      "rough": [
+        0.7,
+        0.9
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "figure.feature": {
+      "note": "五官颜色 = 该人物肤色明度降低约 55%，不发光",
+      "rough": [
+        0.8,
+        0.9
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "figure.glasses": {
+      "palette": [
+        "#1E1C1B",
+        "#5A4632",
+        "#B8BCC0"
+      ],
+      "rough": [
+        0.3,
+        0.5
+      ],
+      "metal": [
+        0,
+        0.6
+      ]
+    },
+    "water": {
+      "all": "#4F7B99",
+      "rough": [
+        0.05,
+        0.2
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "sky": {
+      "all": "#7EA3BE",
+      "horizon": "#E6D9C2"
+    },
+    "terrain.grass": {
+      "all": "#6E8650",
+      "rough": [
+        0.9,
+        1.0
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "terrain.sand": {
+      "all": "#CDB991",
+      "rough": [
+        0.9,
+        1.0
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "foliage": {
+      "all": "#4F6B3E",
+      "rough": [
+        0.8,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "stone.old": {
+      "all": "#8A8578",
+      "rough": [
+        0.8,
+        0.95
+      ],
+      "metal": [
+        0,
+        0
+      ]
+    },
+    "ink.print": {
+      "all": "#2A2622"
+    },
+    "ink.handwriting": {
+      "palette": [
+        "#2F4E73",
+        "#2A2622",
+        "#9C3D2E"
+      ]
+    },
+    "ink.chalk": {
+      "all": "#E8E6DC"
+    },
+    "ink.screen": {
+      "all": "#F2F4F6"
+    }
+  },
+  "emissive_hierarchy": {
+    "1": "焦点光源（灯泡内核、点亮的关键指示灯），面积小、最亮",
+    "2": "状态指示（仪表灯阵、屏幕），克制",
+    "3": "反光（无自发光）",
+    "4": "漫反射（无自发光）"
+  },
+  "light_rigs": {
+    "lab_machine_room": {
+      "A": {
+        "key": {
+          "type": "spot",
+          "temp_K": 2850,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6300,
+          "rel": 0.45
+        },
+        "ambient": 0.8
+      },
+      "B": {
+        "key": {
+          "type": "overhead_fluorescent",
+          "temp_K": 3800,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "desk_lamp",
+          "temp_K": 2900,
+          "rel": 0.5
+        },
+        "ambient": 0.85
+      },
+      "C": {
+        "key": {
+          "type": "overhead_fluorescent",
+          "temp_K": 4100,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6000,
+          "rel": 0.4
+        },
+        "ambient": 0.85
+      },
+      "D": {
+        "key": {
+          "type": "led_panel",
+          "temp_K": 4500,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6000,
+          "rel": 0.5
+        },
+        "ambient": 0.85
+      }
+    },
+    "office_study": {
+      "default": {
+        "key": {
+          "type": "desk_lamp_or_window",
+          "temp_K": "A/B 2900, C/D 4500",
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6000,
+          "rel": 0.4
+        },
+        "ambient": 0.8
+      }
+    },
+    "conference_hall": {
+      "default": {
+        "key": {
+          "type": "stage_spot",
+          "temp_K": 3200,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "house_lights",
+          "temp_K": "A 2900, D 4200",
+          "rel": 0.55
+        },
+        "practical": {
+          "type": "projection",
+          "rel": 0.6
+        },
+        "ambient": 0.75
+      }
+    },
+    "hotel_room": {
+      "default": {
+        "key": {
+          "type": "table_lamp",
+          "temp_K": 2700,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "window_day_or_night_city",
+          "temp_K": "day 6000 / night 4200",
+          "rel": 0.4
+        },
+        "ambient": 0.7
+      }
+    },
+    "restaurant_cafe": {
+      "default": {
+        "key": {
+          "type": "pendant",
+          "temp_K": 2700,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6000,
+          "rel": 0.35
+        },
+        "ambient": 0.75
+      }
+    },
+    "home_apartment": {
+      "default": {
+        "key": {
+          "type": "window_or_lamp",
+          "temp_K": "day 6000 / night 2800",
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "screen_or_bounce",
+          "temp_K": 6500,
+          "rel": 0.3
+        },
+        "ambient": 0.7
+      }
+    },
+    "campus_interior": {
+      "default": {
+        "key": {
+          "type": "led_panel",
+          "temp_K": 4500,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "curtain_wall_daylight",
+          "temp_K": 6000,
+          "rel": 0.6
+        },
+        "ambient": 0.9
+      }
+    },
+    "campus_exterior": {
+      "default": {
+        "key": {
+          "type": "sun",
+          "temp_K": 5500,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "sky",
+          "temp_K": 7500,
+          "rel": 0.5
+        },
+        "ambient": 0.9
+      }
+    },
+    "datacenter": {
+      "default": {
+        "key": {
+          "type": "overhead_led_rows",
+          "temp_K": 5000,
+          "rel": 0.8
+        },
+        "practical": {
+          "type": "indicator_rows",
+          "rel": 0.5
+        },
+        "ambient": 0.6
+      }
+    },
+    "match_hall": {
+      "default": {
+        "key": {
+          "type": "broadcast_softbox",
+          "temp_K": 5000,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "house",
+          "temp_K": 4000,
+          "rel": 0.5
+        },
+        "practical": {
+          "type": "board_spot",
+          "rel": 0.6
+        },
+        "ambient": 0.8
+      }
+    },
+    "keynote_stage": {
+      "default": {
+        "key": {
+          "type": "stage_spot",
+          "temp_K": 4800,
+          "rel": 1.0
+        },
+        "practical": {
+          "type": "led_wall",
+          "rel": 0.7
+        },
+        "ambient": 0.35,
+        "note": "观众区偏暗"
+      }
+    },
+    "boardroom": {
+      "default": {
+        "key": {
+          "type": "overhead_soft",
+          "temp_K": 4000,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "window",
+          "temp_K": 6000,
+          "rel": 0.5
+        },
+        "ambient": 0.8
+      }
+    },
+    "hearing_room": {
+      "default": {
+        "key": {
+          "type": "broadcast_lights",
+          "temp_K": 4500,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "chandelier",
+          "temp_K": 3000,
+          "rel": 0.4
+        },
+        "ambient": 0.8
+      }
+    },
+    "hangar": {
+      "default": {
+        "key": {
+          "type": "skylight_daylight",
+          "temp_K": 6200,
+          "rel": 0.9
+        },
+        "ambient": 0.7,
+        "note": "巨大尺度，远处偏冷偏灰"
+      }
+    },
+    "hospital": {
+      "default": {
+        "key": {
+          "type": "window_daylight",
+          "temp_K": 5800,
+          "rel": 0.9
+        },
+        "fill": {
+          "type": "tube_fluorescent",
+          "temp_K": 4200,
+          "rel": 0.5
+        },
+        "ambient": 0.85
+      }
+    },
+    "historic_town": {
+      "default": {
+        "key": {
+          "type": "overcast_sky",
+          "temp_K": 6500,
+          "rel": 0.8
+        },
+        "practical": {
+          "type": "lanterns",
+          "temp_K": 2400,
+          "rel": 0.4
+        },
+        "ambient": 0.9
+      }
+    },
+    "outdoor_water": {
+      "default": {
+        "key": {
+          "type": "sun",
+          "temp_K": 5600,
+          "rel": 1.0
+        },
+        "fill": {
+          "type": "sky",
+          "temp_K": 8000,
+          "rel": 0.5
+        },
+        "ambient": 0.9
+      }
+    },
+    "vehicle": {
+      "default": {
+        "key": {
+          "type": "window",
+          "temp_K": "day 6000 / night 3500",
+          "rel": 0.8
+        },
+        "fill": {
+          "type": "cabin_light",
+          "temp_K": 3500,
+          "rel": 0.4
+        },
+        "ambient": 0.7
+      }
+    }
+  },
+  "exposure": {
+    "mean_linear": [
+      0.25,
+      0.65
+    ],
+    "overexposed_max_fraction": 0.02,
+    "overexposed_threshold_8bit": 250
+  },
+  "camera": {
+    "glide_rate_per_s": 4.5,
+    "max_glide_distance_m": 2.0,
+    "roll_deg": 0,
+    "free_orbit": false,
+    "pointer_parallax_max_deg": 2,
+    "scene_transition_max_s": 1.2,
+    "reduced_motion": "hard_cut",
+    "shots": {
+      "establishing": {
+        "eye_m": [
+          1.5,
+          2.2
+        ],
+        "distance_m": [
+          4,
+          9
+        ],
+        "fov_deg": [
+          46,
+          52
+        ],
+        "pitch_deg": [
+          -20,
+          -5
+        ]
+      },
+      "work": {
+        "eye_m": {
+          "standing": [
+            1.45,
+            1.6
+          ],
+          "seated": [
+            1.15,
+            1.25
+          ]
+        },
+        "distance_m": [
+          1.5,
+          3.2
+        ],
+        "fov_deg": [
+          40,
+          42
+        ],
+        "pitch_deg": [
+          -22,
+          -10
+        ],
+        "yaw_from_frontal_max_deg": 20,
+        "foreground_surface_fraction": [
+          0.15,
+          0.3
+        ],
+        "key_object_in_central_third": true
+      },
+      "insert": {
+        "distance_m": [
+          0.4,
+          0.9
+        ],
+        "fov_deg": [
+          30,
+          36
+        ],
+        "pitch_deg": [
+          -70,
+          -35
+        ],
+        "document_fraction": [
+          0.5,
+          0.8
+        ]
+      },
+      "pov_seated": {
+        "eye_m": [
+          1.15,
+          1.25
+        ],
+        "distance_m": [
+          3,
+          10
+        ],
+        "fov_deg": [
+          42,
+          46
+        ],
+        "pitch_deg": [
+          -8,
+          -2
+        ]
+      },
+      "over_shoulder": {
+        "eye_m": [
+          1.35,
+          1.55
+        ],
+        "distance_m": [
+          1.2,
+          2.5
+        ],
+        "fov_deg": [
+          36,
+          40
+        ],
+        "pitch_deg": [
+          -12,
+          -5
+        ]
+      },
+      "exterior": {
+        "eye_m": [
+          1.5,
+          20
+        ],
+        "fov_deg": [
+          40,
+          50
+        ],
+        "pitch_deg": [
+          -15,
+          -2
+        ],
+        "horizon": "upper_or_lower_third"
+      }
+    }
+  },
+  "figures": {
+    "heads_tall": {
+      "archival": 7,
+      "editorial": 7,
+      "paper": 6.5,
+      "miniature": 6
+    },
+    "features": [
+      "eyes_dot_or_oval",
+      "brows_short_stroke",
+      "mouth_short_line_or_arc",
+      "nose_bridge_optional",
+      "ears_simple"
+    ],
+    "forbidden_features": [
+      "pupil_highlight",
+      "eyelashes",
+      "wrinkles",
+      "teeth",
+      "photo_texture"
+    ],
+    "expressions": [
+      "neutral",
+      "slight_smile",
+      "laugh",
+      "concern",
+      "attentive"
+    ],
+    "gestures": [
+      "breathe",
+      "turn_head",
+      "hand_over",
+      "point",
+      "raise_hands",
+      "sit",
+      "stand",
+      "write",
+      "hold_card"
+    ],
+    "identity": "只用正文给出的特征：发型、眼镜、衣着、身形、姿态、手持物；首次出场在世界内给出姓名"
+  },
+  "typography": {
+    "fonts": {
+      "Old Standard TT": "OFL",
+      "Libre Baskerville": "OFL",
+      "Special Elite": "Apache-2.0",
+      "Courier Prime": "OFL",
+      "Caveat": "OFL",
+      "Inter": "OFL",
+      "Noto Serif SC": "OFL（子集化）"
+    },
+    "roles": {
+      "type.headline": {
+        "A": "Old Standard TT",
+        "B": "Old Standard TT",
+        "C": "Libre Baskerville",
+        "D": "Libre Baskerville"
+      },
+      "type.body_print": {
+        "all": "Libre Baskerville"
+      },
+      "type.typewriter": {
+        "A": "Special Elite",
+        "B": "Special Elite",
+        "C": "Courier Prime",
+        "D": "Courier Prime"
+      },
+      "type.handwriting": {
+        "all": "Caveat"
+      },
+      "type.chalk": {
+        "all": "Caveat"
+      },
+      "type.modern_sans": {
+        "C": "Inter",
+        "D": "Inter",
+        "forbidden_eras": [
+          "A",
+          "B"
+        ]
+      },
+      "type.ui_zh": {
+        "all": "Noto Serif SC"
+      },
+      "type.ui_en": {
+        "all": "Libre Baskerville"
+      }
+    },
+    "min_world_text_px": 14
+  },
+  "performance": {
+    "fps_min_avg": {
+      "archival": 55,
+      "paper": 55,
+      "editorial": 55,
+      "miniature": 50
+    },
+    "fps_p5_min": 45,
+    "draw_calls_max": 250,
+    "triangles_max": 1500000
+  },
+  "forbidden": [
+    "neon",
+    "hologram",
+    "glowing_circuit_brain",
+    "blue_purple_scifi_gradient",
+    "matrix_rain",
+    "lens_flare",
+    "strong_chromatic_aberration",
+    "fisheye",
+    "logo_as_main_element",
+    "photoreal_face",
+    "pure_white_surface",
+    "pure_black_shadow",
+    "modern_sans_in_eras_A_B",
+    "flat_icons_in_eras_A_B",
+    "fictional_robot_imagery"
+  ],
+  "styles": {
+    "archival": {
+      "source": "gm-ch1-gemini acc/r0018（见 reference/archival-from-gemini/）",
+      "render": {
+        "pbr": true,
+        "tone_mapping": "ACESFilmic",
+        "exposure": [
+          1.02,
+          1.08
+        ],
+        "hemisphere_rel": [
+          0.75,
+          1.05
+        ],
+        "soft_shadows": true,
+        "contact_ao": true
+      },
+      "grade": {
+        "shadows_tint": "slight_cyan",
+        "highlights_tint": "slight_warm",
+        "saturation": {
+          "reds_yellows": "+",
+          "blues": "deeper"
+        },
+        "grain": [
+          0.02,
+          0.03
+        ],
+        "vignette_max": 0.1,
+        "dof": "insert_only_subtle"
+      },
+      "boundary": "none",
+      "transition": {
+        "type": "slide_projector",
+        "dark_frame_s": 0.15,
+        "max_s": 0.6,
+        "sound": "slide_click"
+      },
+      "figures": "matte_mannequin_with_simplified_features",
+      "ui": {
+        "label_bg_opacity": 0.75,
+        "label_bg": "#1F1C19",
+        "label_text": "#F0E5CE",
+        "font": "type.ui_zh"
+      },
+      "fixes_over_gemini": [
+        "three_wood_tones_and_distinct_neutrals_per_scene",
+        "stronger_light_pools_and_film_grade",
+        "add_simplified_features"
+      ]
+    },
+    "paper": {
+      "geometry": {
+        "fold_facets_for_curves": [
+          8,
+          16
+        ],
+        "edge_core_mm": [
+          0.5,
+          3.0
+        ],
+        "tabs_and_creases": true
+      },
+      "materials": {
+        "metalness": 0,
+        "metal_as": "silver_or_gold_foil_paper (rough≈0.35)",
+        "glass_as": "tracing_paper",
+        "screen_as": "backlit_tracing_paper"
+      },
+      "print_by_era": {
+        "A": {
+          "stock": "#EDE4CF",
+          "process": "halftone_dots"
+        },
+        "B": {
+          "process": "offset_flat_ink",
+          "misregistration_px_max": 1
+        },
+        "C": {
+          "process": "laser_flat"
+        },
+        "D": {
+          "process": "coated_stock",
+          "rough": 0.45
+        }
+      },
+      "light": {
+        "key": "soft_desk_lamp",
+        "ao": "strong",
+        "contact_shadows": "strong"
+      },
+      "post": {
+        "paper_grain": "very_light",
+        "dof": "none",
+        "grade": "none"
+      },
+      "boundary": "establishing_shows_popup_book_page",
+      "transition": {
+        "type": "page_turn",
+        "max_s": 1.2
+      },
+      "figures": "layered_paper_cutout_with_printed_features (2-3mm, brads at joints)",
+      "water_sky": "layered_cut_paper_waves; curved_card_backdrop_gradient",
+      "ui": {
+        "label": "paper_tag",
+        "font": "type.ui_zh"
+      }
+    },
+    "editorial": {
+      "geometry": {
+        "simplify": true,
+        "bevel": "small_rounded",
+        "key_object_upscale_max": 0.1
+      },
+      "palette": {
+        "max_hues_per_scene": 6,
+        "source": "era_band",
+        "contrast": "subject_vs_background"
+      },
+      "shading": {
+        "bands": 2,
+        "terminator": "soft",
+        "shadow_tint": "cool_complement"
+      },
+      "outline": {
+        "silhouette_only": true,
+        "px": [
+          1.0,
+          1.5
+        ],
+        "color": "#3A3430"
+      },
+      "era_mood": {
+        "A": "1950s popular-science ochre/teal",
+        "B": "brown/orange/olive",
+        "C": "grey/blue",
+        "D": "white, light wood, few bright accents"
+      },
+      "post": {
+        "grain": [
+          0.03,
+          0.05
+        ],
+        "dof": "none"
+      },
+      "boundary": "establishing_fades_to_paper_background (#F3EEE4)",
+      "transition": {
+        "type": "flat_wipe_or_iris",
+        "max_s": 0.8
+      },
+      "figures": "flat_low_poly_with_feature_decals",
+      "ui": {
+        "label": "flat_color_chip",
+        "font": "type.ui_zh"
+      }
+    },
+    "miniature": {
+      "geometry": {
+        "same_as": "archival",
+        "edge_drybrush_highlight": true,
+        "brush_texture": "very_light"
+      },
+      "materials": {
+        "default": "matte_painted",
+        "metal": {
+          "metal": 0.6,
+          "rough": 0.5
+        },
+        "water": "clear_resin (rough≈0.1, tinted)",
+        "paper": "very_thin_real_paper"
+      },
+      "light": {
+        "key": {
+          "type": "display_case_top",
+          "temp_K": 3200
+        },
+        "fill": "soft",
+        "ao": "strong",
+        "contact_shadows": "strong"
+      },
+      "dof": {
+        "establishing": "tilt_shift_focus_band_on_key_object",
+        "exterior": "tilt_shift",
+        "work": "subtle",
+        "insert": "off"
+      },
+      "post": {
+        "vignette": "light",
+        "grain": 0
+      },
+      "boundary": "establishing_shows_wooden_plinth_with_plaque(year, place)",
+      "transition": {
+        "type": "lift_off_plinth_to_next",
+        "max_s": 1.2
+      },
+      "figures": "painted_1to20_miniatures_with_painted_features (6 heads)",
+      "ui": {
+        "label": "museum_plaque",
+        "font": "type.ui_zh"
+      }
+    }
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "book": "Genius Makers: The Mavericks Who Brought AI to Google, Facebook, and the World",
+  "author": "Cade Metz",
+  "edition": "Dutton 2021 (ebook PDF)",
+  "page_convention": "PDF 物理页码，从1开始；用 pdftotext -f N -l N 抽取。不是印刷页码。",
+  "reference_edition": {
+    "sha256": "3b2bd9d1c8d6e0677e878bdf18c2e70329cc9864a93c6f71af03ae2cd18e806e",
+    "pages": 304,
+    "note": "页码基于这一份 PDF（Dutton 2021 电子版转出的 304 页 PDF）。其他版本运行 book/verify_book.py 会按章名重新定位，生成 chapter-map.local.json。"
+  },
+  "pdf_pages_total": 304,
+  "parts": {
+    "PART ONE · A NEW KIND OF MACHINE": {
+      "title_page": 18,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "PART TWO · WHO OWNS INTELLIGENCE?": {
+      "title_page": 99,
+      "chapters": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "PART THREE · TURMOIL": {
+      "title_page": 164,
+      "chapters": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    "PART FOUR · HUMANS ARE UNDERRATED": {
+      "title_page": 209,
+      "chapters": [
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  "book_references": {
+    "contents": [
+      6,
+      7
+    ],
+    "acknowledgments": [
+      248,
+      249
+    ],
+    "timeline": [
+      250,
+      253
+    ],
+    "the_players": [
+      254,
+      259
+    ],
+    "notes": [
+      260,
+      281
+    ],
+    "index": [
+      282,
+      304
+    ]
+  },
+  "notes_convention": "注释页按 'PROLOGUE: …' / 'CHAPTER N: TITLE' 小标题分段；相邻章节可能共用一页，按小标题切分。",
+  "chapters": [
+    {
+      "id": "prologue",
+      "number": 0,
+      "title": "PROLOGUE",
+      "subtitle": "THE MAN WHO DIDN’T SIT DOWN",
+      "epigraph": null,
+      "part": null,
+      "body_pages": [
+        9,
+        17
+      ],
+      "notes_pages": [
+        260,
+        260
+      ],
+      "next_chapter_first_page": 19,
+      "date_line": "December 2012"
+    },
+    {
+      "id": "1",
+      "number": 1,
+      "title": "GENESIS",
+      "subtitle": null,
+      "epigraph": "“Frankenstein Monster Designed by Navy That Thinks.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        19,
+        28
+      ],
+      "notes_pages": [
+        260,
+        262
+      ],
+      "next_chapter_first_page": 29
+    },
+    {
+      "id": "2",
+      "number": 2,
+      "title": "PROMISE",
+      "subtitle": null,
+      "epigraph": "“Old ideas are new.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        29,
+        42
+      ],
+      "notes_pages": [
+        262,
+        263
+      ],
+      "next_chapter_first_page": 43
+    },
+    {
+      "id": "3",
+      "number": 3,
+      "title": "REJECTION",
+      "subtitle": null,
+      "epigraph": "“I was definitely thinking I was right the whole time.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        43,
+        58
+      ],
+      "notes_pages": [
+        263,
+        263
+      ],
+      "next_chapter_first_page": 59
+    },
+    {
+      "id": "4",
+      "number": 4,
+      "title": "BREAKTHROUGH",
+      "subtitle": null,
+      "epigraph": "“Do what you want at Google—not what Google wants you to do.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        59,
+        69
+      ],
+      "notes_pages": [
+        264,
+        264
+      ],
+      "next_chapter_first_page": 70
+    },
+    {
+      "id": "5",
+      "number": 5,
+      "title": "TESTAMENT",
+      "subtitle": null,
+      "epigraph": "“The speed of light in a vacuum used to be about 35 mph. Then Jeff Dean spent a weekend optimizing physics.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        70,
+        84
+      ],
+      "notes_pages": [
+        264,
+        265
+      ],
+      "next_chapter_first_page": 85
+    },
+    {
+      "id": "6",
+      "number": 6,
+      "title": "AMBITION",
+      "subtitle": null,
+      "epigraph": "“Let’s really go big.”",
+      "part": "PART ONE · A NEW KIND OF MACHINE",
+      "body_pages": [
+        85,
+        98
+      ],
+      "notes_pages": [
+        265,
+        266
+      ],
+      "next_chapter_first_page": 100
+    },
+    {
+      "id": "7",
+      "number": 7,
+      "title": "RIVALRY",
+      "subtitle": null,
+      "epigraph": "“Hello, this is Mark, from Facebook.”",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        100,
+        110
+      ],
+      "notes_pages": [
+        266,
+        266
+      ],
+      "next_chapter_first_page": 111
+    },
+    {
+      "id": "8",
+      "number": 8,
+      "title": "HYPE",
+      "subtitle": null,
+      "epigraph": "“Success is guaranteed.’’",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        111,
+        124
+      ],
+      "notes_pages": [
+        267,
+        268
+      ],
+      "next_chapter_first_page": 125
+    },
+    {
+      "id": "9",
+      "number": 9,
+      "title": "ANTI-HYPE",
+      "subtitle": null,
+      "epigraph": "“He could produce something evil by accident.”",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        125,
+        136
+      ],
+      "notes_pages": [
+        268,
+        270
+      ],
+      "next_chapter_first_page": 137
+    },
+    {
+      "id": "10",
+      "number": 10,
+      "title": "EXPLOSION",
+      "subtitle": null,
+      "epigraph": "“He ran AlphaGo like Oppenheimer ran the Manhattan Project.”",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        137,
+        145
+      ],
+      "notes_pages": [
+        270,
+        271
+      ],
+      "next_chapter_first_page": 146
+    },
+    {
+      "id": "11",
+      "number": 11,
+      "title": "EXPANSION",
+      "subtitle": null,
+      "epigraph": "“George wiped out the whole field without even knowing its name.”",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        146,
+        153
+      ],
+      "notes_pages": [
+        271,
+        272
+      ],
+      "next_chapter_first_page": 154
+    },
+    {
+      "id": "12",
+      "number": 12,
+      "title": "DREAMLAND",
+      "subtitle": null,
+      "epigraph": "“It is not that people at Google drink different waters.”",
+      "part": "PART TWO · WHO OWNS INTELLIGENCE?",
+      "body_pages": [
+        154,
+        163
+      ],
+      "notes_pages": [
+        272,
+        273
+      ],
+      "next_chapter_first_page": 165
+    },
+    {
+      "id": "13",
+      "number": 13,
+      "title": "DECEIT",
+      "subtitle": null,
+      "epigraph": "“Oh, you can actually make photo-realistic faces.”",
+      "part": "PART THREE · TURMOIL",
+      "body_pages": [
+        165,
+        172
+      ],
+      "notes_pages": [
+        273,
+        274
+      ],
+      "next_chapter_first_page": 173
+    },
+    {
+      "id": "14",
+      "number": 14,
+      "title": "HUBRIS",
+      "subtitle": null,
+      "epigraph": "“I knew when I gave the speech that the Chinese were coming.”",
+      "part": "PART THREE · TURMOIL",
+      "body_pages": [
+        173,
+        183
+      ],
+      "notes_pages": [
+        274,
+        275
+      ],
+      "next_chapter_first_page": 184
+    },
+    {
+      "id": "15",
+      "number": 15,
+      "title": "BIGOTRY",
+      "subtitle": null,
+      "epigraph": "“Google Photos, y’all fucked up. My friend is not a gorilla.”",
+      "part": "PART THREE · TURMOIL",
+      "body_pages": [
+        184,
+        191
+      ],
+      "notes_pages": [
+        275,
+        276
+      ],
+      "next_chapter_first_page": 192
+    },
+    {
+      "id": "16",
+      "number": 16,
+      "title": "WEAPONIZATION",
+      "subtitle": null,
+      "epigraph": "“You probably heard Elon Musk and his comment about AI causing WW3.”",
+      "part": "PART THREE · TURMOIL",
+      "body_pages": [
+        192,
+        200
+      ],
+      "notes_pages": [
+        276,
+        277
+      ],
+      "next_chapter_first_page": 201
+    },
+    {
+      "id": "17",
+      "number": 17,
+      "title": "IMPOTENCE",
+      "subtitle": null,
+      "epigraph": "“There are people in Russia whose job it is to try to exploit our systems. So this is an arms race, right?”",
+      "part": "PART THREE · TURMOIL",
+      "body_pages": [
+        201,
+        208
+      ],
+      "notes_pages": [
+        277,
+        278
+      ],
+      "next_chapter_first_page": 210
+    },
+    {
+      "id": "18",
+      "number": 18,
+      "title": "DEBATE",
+      "subtitle": null,
+      "epigraph": "“However long the rapid progress continues, Gary will still argue it is about to end.”",
+      "part": "PART FOUR · HUMANS ARE UNDERRATED",
+      "body_pages": [
+        210,
+        219
+      ],
+      "notes_pages": [
+        278,
+        279
+      ],
+      "next_chapter_first_page": 220
+    },
+    {
+      "id": "19",
+      "number": 19,
+      "title": "AUTOMATION",
+      "subtitle": null,
+      "epigraph": "“If the room looked like things had gone crazy, we were on the right track.”",
+      "part": "PART FOUR · HUMANS ARE UNDERRATED",
+      "body_pages": [
+        220,
+        227
+      ],
+      "notes_pages": [
+        279,
+        280
+      ],
+      "next_chapter_first_page": 228
+    },
+    {
+      "id": "20",
+      "number": 20,
+      "title": "RELIGION",
+      "subtitle": null,
+      "epigraph": "“My goal is to successfully create broadly beneficial AGI. I also understand this sounds ridiculous.”",
+      "part": "PART FOUR · HUMANS ARE UNDERRATED",
+      "body_pages": [
+        228,
+        240
+      ],
+      "notes_pages": [
+        280,
+        281
+      ],
+      "next_chapter_first_page": 241
+    },
+    {
+      "id": "21",
+      "number": 21,
+      "title": "X FACTOR",
+      "subtitle": null,
+      "epigraph": "“History is going to repeat itself, I think.”",
+      "part": "PART FOUR · HUMANS ARE UNDERRATED",
+      "body_pages": [
+        241,
+        247
+      ],
+      "notes_pages": [
+        281,
+        281
+      ],
+      "next_chapter_first_page": null
+    }
+  ]
+}

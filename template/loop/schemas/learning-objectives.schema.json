@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "learning-objectives",
+  "type": "object",
+  "required": [
+    "chapter",
+    "objectives"
+  ],
+  "properties": {
+    "chapter": {
+      "type": "string"
+    },
+    "objectives": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "statement",
+          "question",
+          "reference_answer",
+          "pages",
+          "discoverable_by_doing",
+          "scenes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^LO[0-9]+$"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string",
+            "description": "锚定在体验上的问题：问体验者做了什么、看到了什么"
+          },
+          "reference_answer": {
+            "type": "string"
+          },
+          "pages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer"
+            }
+          },
+          "discoverable_by_doing": {
+            "type": "boolean"
+          },
+          "scenes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

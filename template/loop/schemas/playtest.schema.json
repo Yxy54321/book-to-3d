@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "playtest",
+  "type": "object",
+  "required": [
+    "steps",
+    "completed",
+    "questionnaire"
+  ],
+  "properties": {
+    "scope": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "step",
+          "see",
+          "think",
+          "intend",
+          "action"
+        ],
+        "properties": {
+          "step": {
+            "type": "integer"
+          },
+          "see": {
+            "type": "string"
+          },
+          "think": {
+            "type": "string"
+          },
+          "intend": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          },
+          "flags": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "bored",
+                "confused",
+                "too_much_text",
+                "stuck",
+                "delighted",
+                "present"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "stopped_reason": {
+      "type": "string"
+    },
+    "questionnaire": {
+      "type": "object",
+      "required": [
+        "retelling",
+        "answers"
+      ],
+      "properties": {
+        "retelling": {
+          "type": "string"
+        },
+        "answers": {
+          "type": "object",
+          "properties": {
+            "LO0": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO1": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO2": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO3": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO4": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO5": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO6": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            },
+            "LO7": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "type": "string"
+                },
+                "cites_own_experience": {
+                  "type": "string"
+                },
+                "prior_knowledge": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "answer",
+                "prior_knowledge"
+              ]
+            }
+          }
+        },
+        "present_moment": {
+          "type": "string"
+        },
+        "reading_moment": {
+          "type": "string"
+        },
+        "wanted_but_couldnt": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confusion_or_boredom": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": {
+                "type": "integer"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "continue_to_next_chapter": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

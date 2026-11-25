@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "comprehension-score",
+  "description": "由新的标注会话对 playtest 问卷评分（RUBRICS 第6、7节）",
+  "type": "object",
+  "required": [
+    "lo_scores",
+    "agentive_ratio"
+  ],
+  "properties": {
+    "lo_scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "score",
+          "reason"
+        ],
+        "properties": {
+          "score": {
+            "enum": [
+              0,
+              1,
+              2
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "agentive_ratio": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "clauses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "agentive": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

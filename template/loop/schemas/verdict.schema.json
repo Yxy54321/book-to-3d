@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "verdict",
+  "description": "R6 比较者输出；A/B 映射由编排者另存",
+  "type": "object",
+  "required": [
+    "overall",
+    "issues",
+    "new_issues"
+  ],
+  "properties": {
+    "lens": {
+      "type": "string"
+    },
+    "overall": {
+      "type": "object",
+      "required": [
+        "preference",
+        "confidence",
+        "reasons"
+      ],
+      "properties": {
+        "preference": {
+          "enum": [
+            "A",
+            "B",
+            "none"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "clearly_better": {
+          "type": "boolean"
+        },
+        "reasons": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "file",
+              "locator"
+            ],
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "locator": {
+                "type": "string",
+                "description": "区域描述 / 日志行 / 文档章节 / 原书页码"
+              }
+            }
+          }
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "issue_id",
+          "state_A",
+          "state_B",
+          "evidence"
+        ],
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "state_A": {
+            "enum": [
+              "absent",
+              "slight",
+              "obvious",
+              "cannot_judge"
+            ]
+          },
+          "state_B": {
+            "enum": [
+              "absent",
+              "slight",
+              "obvious",
+              "cannot_judge"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "locator"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": "string",
+                  "description": "区域描述 / 日志行 / 文档章节 / 原书页码"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "new_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "version",
+          "severity",
+          "title",
+          "evidence"
+        ],
+        "properties": {
+          "version": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "is_regression_outside_target": {
+            "type": "boolean"
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "locator"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string"
+                },
+                "locator": {
+                  "type": "string",
+                  "description": "区域描述 / 日志行 / 文档章节 / 原书页码"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

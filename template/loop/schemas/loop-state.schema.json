@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "loop-state",
+  "type": "object",
+  "required": [
+    "phase",
+    "round",
+    "stall_count",
+    "escalation",
+    "accepted_tag",
+    "status"
+  ],
+  "properties": {
+    "phase": {
+      "enum": [
+        "P0",
+        "P1",
+        "P2",
+        "PK",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8"
+      ]
+    },
+    "round": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "stall_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "escalation": {
+      "type": [
+        "null",
+        "object"
+      ],
+      "properties": {
+        "rounds_used": {
+          "type": "integer"
+        },
+        "modes_used": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "accepted_tag": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "status": {
+      "enum": [
+        "running",
+        "degraded",
+        "waiting_style",
+        "finished"
+      ]
+    },
+    "last_result": {
+      "enum": [
+        "ACCEPT_SIGNIFICANT",
+        "ACCEPT_MINOR",
+        "REJECT",
+        "FAILED",
+        "NO_ISSUES",
+        "WAITING",
+        null
+      ]
+    },
+    "phase_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "exit": {
+            "enum": [
+              "success",
+              "stalled"
+            ]
+          },
+          "rounds": {
+            "type": "integer"
+          },
+          "carryover_issues": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "rounds_since_canary": {
+      "type": "integer"
+    },
+    "rounds_since_subtraction": {
+      "type": "integer"
+    },
+    "rounds_since_full_review": {
+      "type": "integer"
+    },
+    "mode": {
+      "enum": [
+        "chapter",
+        "style"
+      ]
+    },
+    "chapter": {
+      "type": "string"
+    },
+    "book_style_version": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "image_route": {
+      "enum": [
+        "image_first",
+        "spec_only",
+        null
+      ]
+    },
+    "selected_style": {
+      "enum": [
+        "archival",
+        "paper",
+        "editorial",
+        "miniature",
+        null
+      ]
+    }
+  }
+}
